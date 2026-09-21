@@ -1,0 +1,71 @@
+.header {
+  background: linear-gradient(180deg, #0f0f1a 0%, #1a1a2e 100%);
+  border-bottom: 2px solid #c0392b;
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 64px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #c0392b;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 0.2em;
+}
+
+.header__logo-icon {
+  font-size: 1.8rem;
+}
+
+.header__logo-text {
+  text-shadow: 0 0 10px rgba(192, 57, 43, 0.6);
+}
+
+.header__nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.header__nav-link {
+  color: #8899aa;
+  text-decoration: none;
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.header__nav-link:hover {
+  color: #c0392b;
+}
+
+.header__nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #c0392b;
+  transition: width 0.2s;
+}
+
+.header__nav-link:hover::after {
+  width: 100%;
+}

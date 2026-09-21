@@ -1,0 +1,93 @@
+export const newsArticles = [
+  {
+    id: 2,
+    title: "Scontri tra gang a Milano: tre feriti in zona periferia",
+    excerpt: "Una sparatoria tra fazioni rivali nella periferia di Milano ha provocato il caos tra i residenti, con tre civili feriti.",
+    category: "Criminalit\u00e0",
+    date: "2026-03-28",
+    image: "https://placehold.co/800x400/1a1a2e/e0a82c?text=Scontri+Milano",
+    content: `Un violento scontro tra gang rivali ha sconvolto la periferia di Milano, lasciando tre civili feriti. Le fazioni si sono affrontate per il controllo del giro di spaccio nella zona.
+
+Le forze di sicurezza hanno isolato l'area e stanno conducendo indagini. "Questo tipo di violenza è diventato troppo comune nei quartieri periferici", ha dichiarato un portavoce della questura.
+
+Testimoni riferiscono di aver visto almeno una dozzina di giovani armati durante la sparatoria, durata circa venti minuti.`,
+  },
+  {
+    id: 3,
+    title: "Nuova flotta di droni antincendio schierata in California",
+    excerpt: "La California ha dispiegato una flotta di droni antincendio per contrastare gli incendi boschivi nella stagione estiva.",
+    category: "Tecnologia",
+    date: "2026-03-25",
+    image: "https://placehold.co/800x400/1a1a2e/e0a82c?text=Droni+Antincendio",
+    content: `Una nuova flotta di droni antincendio è stata schierata in California per pattugliare le aree a rischio incendi. I nuovi modelli sono equipaggiati con sensori termici e sistemi di spegnimento avanzati.
+
+"Questi droni sono più veloci e precisi di qualsiasi modello precedente", ha affermato il comandante dei vigili del fuoco. "Gli incendi boschivi incontreranno una resistenza senza precedenti."
+
+Gli analisti ambientali hanno elogiato la mossa come un passo necessario per proteggere i territori della California.`,
+  },
+  {
+    id: 4,
+    title: "Scoperta una nuova specie di anfibi in Amazzonia",
+    excerpt: "Una spedizione scientifica ha scoperto una nuova specie di anfibi mai vista prima nella foresta amazzonica.",
+    category: "Scienza",
+    date: "2026-03-20",
+    image: "https://placehold.co/800x400/1a1a2e/e0a82c?text=Specie+Amazzonia",
+    content: `Una spedizione scientifica supportata dall'Università di San Paolo ha scoperto nuove forme di anfibi nella foresta amazzonica. Le creature, dai colori vivaci e luminescenti, sembrano reagire alla presenza di particolari minerali.
+
+"È una scoperta che potrebbe riscrivere la nostra comprensione della biodiversità amazzonica", ha detto la biologa capo della missione.
+
+Le autorità brasiliane hanno espresso grande interesse per la scoperta e stanno valutando l'invio di una delegazione per studiare ulteriormente il fenomeno.`,
+  },
+  {
+    id: 5,
+    title: "Mistero in Egitto: antiche rovine risalgono all'era dei faraoni",
+    excerpt: "Archeologi hanno portato alla luce un complesso di rovine in Egitto che potrebbe risalire all'epoca dei primi faraoni.",
+    category: "Storia",
+    date: "2026-03-18",
+    image: "https://placehold.co/800x400/1a1a2e/e0a82c?text=Rovine+Egitto",
+    content: `Un team di archeologi ha scoperto un complesso di rovine nel deserto egiziano che potrebbe risalire all'epoca dei primi faraoni. Le iscrizioni trovate suggeriscono una cultura avanzata che utilizzava tecniche di costruzione sconosciute.
+
+"Questo sito potrebbe contenere segreti perduti sull'antico Egitto", ha dichiarato la direttrice degli scavi. "Abbiamo trovato ceramiche, strumenti e frammenti di quella che sembra essere una mappa stellare."
+
+Le autorità locali hanno già richiesto la protezione del sito da parte dei tombaroli.`,
+  },
+  {
+    id: 6,
+    title: "Il Campionato di Moto GP: iscrizioni aperte per la stagione",
+    excerpt: "Le iscrizioni per il torneo annuale di Moto GP sono ufficialmente aperte, con categorie per piloti dilettanti e professionisti.",
+    category: "Eventi",
+    date: "2026-03-15",
+    image: "https://placehold.co/800x400/1a1a2e/e0a82c?text=Moto+GP",
+    content: `Il Campionato mondiale di Moto GP ha annunciato l'apertura delle iscrizioni per l'edizione di quest'anno. L'evento, che si terrà su diverse piste tra cui Monza e Valencia, prevede categorie per piloti dilettanti e professionisti.
+
+"Quest'anno abbiamo introdotto una nuova categoria 'Sfida Elettrica' dove i piloti possono usare moto elettriche ad alte prestazioni", ha annunciato l'organizzatore.
+
+L'anno scorso l'evento ha attratto oltre 500.000 spettatori da tutto il mondo.`,
+  },
+  {
+    id: 7,
+    title: "Nuova legge sulla trasparenza dei dati digitali approvata dal Senato",
+    excerpt: "Il Senato italiano ha approvato una controversa legge che impone standard di trasparenza per i dati digitali delle grandi aziende.",
+    category: "Politica",
+    date: "2026-04-05",
+    image: "https://placehold.co/800x400/1a1a2e/e0a82c?text=Legge+Trasparenza",
+    content: `Il Senato italiano ha approvato con una stretta maggioranza la nuova legge sulla trasparenza dei dati digitali, che impone alle aziende di rendere pubblici i propri archivi relativi a transazioni commerciali.
+
+La legge, fortemente voluta dal partito dei Riformatori, promette di aumentare la fiducia dei cittadini nei mercati finanziari. Le opposizioni denunciano un rischio per la privacy aziendale.
+
+"Questa legge è un passo necessario per garantire equità nei commerci", ha dichiarato il Senatore promotore.
+
+Le principali aziende hanno già annunciato ricorso.`,
+  },
+];
+
+
+export const categories = [
+  { id: "criminalita", name: "Criminalit\u00e0", color: "#e05a5a" },
+  { id: "tecnologia", name: "Tecnologia", color: "#5ab0e0" },
+  { id: "scienza", name: "Scienza", color: "#5ae0b0" },
+  { id: "storia", name: "Storia", color: "#e0a85a" },
+  { id: "eventi", name: "Eventi", color: "#e0d95a" },
+  { id: "politica", name: "Politica", color: "#c0392b" },
+];
+

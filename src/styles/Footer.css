@@ -1,0 +1,41 @@
+.footer {
+  background: linear-gradient(0deg, #0f0f1a 0%, #1a1a2e 100%);
+  border-top: 2px solid #c0392b;
+  padding: 1.5rem 2rem;
+  margin-top: 3rem;
+}
+
+.footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer__text {
+  color: #667788;
+  font-family: "Courier New", monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.5rem 0;
+}
+
+.footer__credit {
+  color: #445566;
+  font-family: "Courier New", monospace;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.footer__credit em {
+  color: #c0392b;
+  font-style: italic;
+}
+
+.footer__author {
+  color: #c0392b;
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  margin: 0.5rem 0 0 0;
+  text-transform: uppercase;
+}

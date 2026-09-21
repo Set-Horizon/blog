@@ -1,0 +1,50 @@
+.sidebar {
+  background: linear-gradient(180deg, #1a1a2e 0%, #0f0f1a 100%);
+  border: 1px solid #2a2a3e;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.sidebar__title {
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  color: #c0392b;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #2a2a3e;
+}
+
+.sidebar__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  color: #8899aa;
+  text-decoration: none;
+  font-family: "Courier New", monospace;
+  font-size: 0.85rem;
+  transition: color 0.2s, background 0.2s;
+  border-radius: 4px;
+}
+
+.sidebar__link:hover {
+  color: #c0392b;
+  background: rgba(192, 57, 43, 0.05);
+}
+
+.sidebar__indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--cat-color, #c0392b);
+  border-radius: 50%;
+  box-shadow: 0 0 6px var(--cat-color, #c0392b);
+}

@@ -1,0 +1,70 @@
+.page-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.page-layout__main {
+  min-width: 0;
+}
+
+.page-layout__sidebar {
+  position: sticky;
+  top: 80px;
+  align-self: start;
+}
+
+.page-layout__heading {
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.page-layout__title {
+  font-family: "Courier New", monospace;
+  font-size: 1.6rem;
+  color: #c0392b;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(192, 57, 43, 0.3);
+}
+
+.page-layout__accent {
+  height: 2px;
+  background: linear-gradient(90deg, #c0392b, transparent);
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.page-layout__notfound {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.page-layout__notfound h2 {
+  color: #667788;
+  font-family: "Courier New", monospace;
+  margin-bottom: 1rem;
+}
+
+.page-layout__notfound a {
+  color: #c0392b;
+  text-decoration: none;
+}
+
+.page-layout__notfound a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .page-layout__sidebar {
+    position: static;
+    margin-top: 1rem;
+  }
+}

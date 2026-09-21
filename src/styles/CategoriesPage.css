@@ -1,0 +1,48 @@
+.categories-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1.5rem 0;
+}
+
+.category-card {
+  background: linear-gradient(145deg, #1a1a2e 0%, #0f0f1a 100%);
+  border: 1px solid #2a2a3e;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #8899aa;
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.category-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--cat-color, #c0392b);
+  box-shadow: 0 0 15px rgba(var(--cat-color, #c0392b), 0.15);
+  color: #e0e0f0;
+}
+
+.category-card__indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: var(--cat-color, #c0392b);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--cat-color, #c0392b);
+}
+
+.category-card__name {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

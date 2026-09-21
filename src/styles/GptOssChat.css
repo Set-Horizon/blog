@@ -1,0 +1,281 @@
+/* === Pannello Chat a scomparsa === */
+
+@keyframes gpt-oss-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes gpt-oss-think-pulse {
+  0%, 80%, 100% { opacity: 0.3; transform: scale(0.8); }
+  40% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Pulse più fluido — solo box-shadow, nessun transform */
+@keyframes gpt-oss-pulse {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(192, 57, 43, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(192, 57, 43, 0.8), 0 0 60px rgba(192, 57, 43, 0.4);
+  }
+}
+
+.gpt-oss-chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Pulsante toggle — stile GAIA (cerchi concentrici) */
+.gpt-oss-chat__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #1a0f0f, #2e1a1a);
+  border: 2px solid #c0392b;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 12px rgba(192, 57, 43, 0.3);
+  padding: 0;
+  animation: gpt-oss-pulse 1.5s ease-in-out infinite;
+}
+
+.gpt-oss-chat__toggle:hover {
+  background: #2e1a1a;
+  box-shadow: 0 0 40px rgba(192, 57, 43, 0.9);
+  animation: none;
+}
+
+.gpt-oss-chat__toggle-svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 6px rgba(192, 57, 43, 0.6));
+  transition: transform 0.3s;
+}
+
+.gpt-oss-chat__toggle-svg--spin {
+  animation: gpt-oss-spin 1s linear infinite;
+}
+
+/* Pannello espandibile */
+.gpt-oss-chat__panel {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  right: 0;
+  width: 360px;
+  background: linear-gradient(180deg, #2e1a1a 0%, #1a0f0f 100%);
+  border: 1px solid #3e2a2a;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 520px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.gpt-oss-chat__panel--open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.gpt-oss-chat__panel--hidden.gpt-oss-chat__panel--open {
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+
+.gpt-oss-chat__header {
+  border-bottom: 1px solid #3e2a2a;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.gpt-oss-chat__title {
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  color: #c0392b;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin: 0;
+  text-shadow: 0 0 8px rgba(192, 57, 43, 0.4);
+}
+
+/* Area cronologia chat */
+.gpt-oss-chat__messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 100px;
+  max-height: 320px;
+  scroll-behavior: smooth;
+}
+
+.gpt-oss-chat__messages::-webkit-scrollbar {
+  width: 4px;
+}
+
+.gpt-oss-chat__messages::-webkit-scrollbar-track {
+  background: #1a0f0f;
+}
+
+.gpt-oss-chat__messages::-webkit-scrollbar-thumb {
+  background: #3e2a2a;
+  border-radius: 2px;
+}
+
+.gpt-oss-chat__message {
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.gpt-oss-chat__message--user {
+  background: rgba(192, 57, 43, 0.08);
+  border-left: 2px solid #c0392b;
+  color: #e0b8b8;
+}
+
+.gpt-oss-chat__message--assistant {
+  background: rgba(192, 57, 43, 0.06);
+  border-left: 2px solid #c0392b;
+  color: #d0c0c0;
+}
+
+.gpt-oss-chat__message-role {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #c0392b;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.gpt-oss-chat__message-content {
+  color: inherit;
+}
+
+/* Messaggio di pensiero */
+.gpt-oss-chat__message--thinking {
+  background: rgba(192, 57, 43, 0.06);
+  border-left: 2px solid #c0392b;
+}
+
+.gpt-oss-chat__thinking-indicator {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.gpt-oss-chat__thinking-dot {
+  width: 8px;
+  height: 8px;
+  background: #c0392b;
+  border-radius: 50%;
+  animation: gpt-oss-think-pulse 1.2s ease-in-out infinite;
+}
+
+.gpt-oss-chat__thinking-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.gpt-oss-chat__thinking-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Area input */
+.gpt-oss-chat__input-area {
+  display: flex;
+  gap: 0.5rem;
+  align-items: stretch;
+}
+
+.gpt-oss-chat__input {
+  flex: 1;
+  background: #1a0f0f;
+  border: 1px solid #3e2a2a;
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: #e0b8b8;
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  resize: none;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.gpt-oss-chat__input:focus {
+  border-color: #c0392b;
+}
+
+.gpt-oss-chat__input::placeholder {
+  color: #667788;
+}
+
+.gpt-oss-chat__send {
+  background: #c0392b;
+  color: #1a0f0f;
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  align-self: stretch;
+}
+
+.gpt-oss-chat__send:hover {
+  background: #d44a3a;
+  box-shadow: 0 0 12px rgba(192, 57, 43, 0.4);
+}
+
+.gpt-oss-chat__send:disabled {
+  background: #3e2a2a;
+  cursor: not-allowed;
+  color: #667788;
+}
+
+/* Spinner nel pulsante durante il caricamento */
+.gpt-oss-chat__send-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #1a0f0f;
+  border-top-color: #e0b8b8;
+  border-radius: 50%;
+  animation: gpt-oss-spin 0.6s linear infinite;
+}
+
+.gpt-oss-chat__error {
+  color: #e05a5a;
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  padding: 6px;
+  background: rgba(224, 90, 90, 0.1);
+  border-radius: 4px;
+}

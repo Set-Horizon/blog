@@ -1,0 +1,8 @@
+[
+  { "id": "criminalita", "name": "Criminalità", "color": "#e05a5a" },
+  { "id": "tecnologia", "name": "Tecnologia", "color": "#5ab0e0" },
+  { "id": "scienza", "name": "Scienza", "color": "#5ae0b0" },
+  { "id": "storia", "name": "Storia", "color": "#e0a85a" },
+  { "id": "eventi", "name": "Eventi", "color": "#e0d95a" },
+  { "id": "politica", "name": "Politica", "color": "#c0392b" }
+]

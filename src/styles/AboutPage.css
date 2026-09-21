@@ -1,0 +1,23 @@
+.about-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-page__content {
+  padding: 1.5rem 0;
+}
+
+.about-page__content p {
+  color: #8899aa;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.about-page__content strong {
+  color: #c0392b;
+}
+
+.about-page__content em {
+  color: #c0392b;
+  font-style: italic;
+}
