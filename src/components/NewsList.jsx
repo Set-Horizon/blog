@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
 import "../styles/NewsList.css";
 
+function sortArticles(articles) {
+  return [...articles].sort((a, b) => {
+    if (a.date !== b.date) return a.date < b.date ? 1 : -1;
+    return b.id - a.id;
+  });
+}
+
 export default function NewsList({ articles }) {
   return (
     <section className="news-list">
-      {articles.map((article) => (
+      {sortArticles(articles).map((article) => (
         <article key={article.id} className="news-card">
           <Link to={`/notizie/${article.id}`} className="news-card__link">
             <div className="news-card__image-wrapper">

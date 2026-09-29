@@ -164,7 +164,7 @@ def cmd_add(news):
         "excerpt": excerpt,
         "category": cat_name,
         "date": today,
-        "image": f"https://placehold.co/800x400/1a1a2e/e0a82c?text={title.replace(' ', '+')}",
+        "image": f"https://placehold.co/800x400/1a1a2e/5ab0e0?text={title.replace(' ', '+')}",
         "content": content,
     }
     news.append(new_article)
