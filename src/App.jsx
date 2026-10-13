@@ -6,7 +6,7 @@ import NewsDetailPage from "./pages/NewsDetailPage";
 import CategoriesPage from "./pages/CategoriesPage";
 import CategoryPage from "./pages/CategoryPage";
 import AboutPage from "./pages/AboutPage";
-import GptOssChat from "./components/GptOssChat";
+import GptOssChat from "./components/GptOssChat"; // Test 4
 import "./App.css";
 
 export default function App() {
