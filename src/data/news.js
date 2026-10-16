@@ -1,5 +1,70 @@
 export const newsArticles = [
   {
+    id: 15,
+    title: "Le Proteste dei Lavoratori in Calabria: Quando lo Stato Mette l'Uguaglianza Imposta Davanti alla Libertà Economica",
+    excerpt: "Dietro la rabbia dei lavoratori in Calabria si nasconde un problema più profondo: la riduzione della libertà economica, una ferita che non ha colore politico.",
+    category: "Economia",
+    date: "2026-10-16",
+    image: "https://placehold.co/800x400/1a1a2e/5ae0c0?text=Proteste+Calabria",
+    content: `Le strade di Calabria si riempiono di nuovo di lavoratori in corteo, striscioni e rivendicazioni. È uno spettacolo che in questa terra si ripete da decenni, e che spesso viene letto come un capitolo della storia eterna del Mezzogiorno: lavoratori che chiedono tutele, salari, servizi, attenzione. Ma se si guarda con attenzione, dietro la rabbia dei lavoratori in Calabria si nasconde un problema più profondo e più trasversale di quanto appaia: la riduzione della libertà economica, una ferita che non ha colore politico e che colpisce chi lavora, chi vorrebbe lavorare e chi vorrebbe assumere.
+
+### Una protesta che non è solo meridionale
+
+La tentazione è quella di confinare il malcontento calabrese nell'area delle "problematiche del Sud", come se la causa fosse la geografia, la cultura o l'eredità storica. È una lettura comoda ma incompleta. I lavoratori in Calabria protestano perché sentono di vivere dentro un sistema che da un lato li protegge poco dalle forze del mercato e dall'altro li frena con regole, tasse, burocrazia e vincoli che limitano la loro capacità di produrre, scambiare e crescere. La protesta calabrese è, in fondo, il sintomo visibile di una malattia che riguarda l'intera economia italiana e, in misura diversa, di gran parte dell'Occidente: un'idea di Stato che non si limita al proprio ruolo, ma pretende di guidare la vita economica dei cittadini come se ne fosse il proprietario.
+
+### Il ruolo naturale dello Stato: e i suoi limiti
+
+C'è un'idea, non nuova, di ciò che lo Stato dovrebbe fare — e solo fare. Dovrebbe combattere il furto e la frode, impedire che qualcuno si approprii del lavoro o delle proprietà altrui attraverso la coercizione o l'inganno. Dovrebbe proteggere le persone dalla violenza, garantire l'applicazione dei contratti liberamente sottoscritti e creare le condizioni perché ognuno possa perseguire il proprio interesse legittimo. Questo è lo Stato minimo, il "guardiano", che non sceglie al posto dei cittadini ma assicura che nessuno possa fare agli altri ciò che non accetterebbe se fatto a sé stesso.
+
+Il problema nasce quando lo Stato smette di essere arbitro e diventa giocatore, quando non si limita a proteggere la libertà ma pretende di imporre un modello di vita e di ridistribuire la ricchezza secondo una propria idea di giustizia. A quel punto la politica non serve più a creare le condizioni della prosperità, ma a decidere chi deve avere di più e chi di meno, chi può fare cosa e chi deve restare dove è stato messo.
+
+### Statista a destra e statista a sinistra
+
+Qui sta il punto cruciale: la politica statalista non è un problema di parte. Da un lato e dall'altro dello scacchiere, destra e sinistra condividono la stessa premessa di fondo: l'idea che, senza lo Stato a regolare, distribuire, incentivare e talvolta espropriare, l'economia sarebbe ingiusta, diseguale, selvaggia. La sinistra statalista interviene per redistribuire e "proteggere"; la destra statalista interviene per premiare, protezionare e guidare il "capitale" verso le destinate scelte nazionali. Ma in entrambi i casi il cittadino che lavora vede la sua libertà di scelta ridotta: libertà di produrre, di scambiare, di assumere, di licenziare, di risparmiare, di investire, di fallire e ricominciare.
+
+Il giustizialismo economico — l'idea che sia compito della politica garantire non solo la giustizia formale ma anche l'uguaglianza sostanziale dei risultati — è la forma più radicale di questa tentazione. Quando lo Stato decide chi deve essere ricco e chi povero, non sta più applicando regole uguali per tutti, ma sta imponendo una destinazione alla vita economica di ogni individuo.
+
+### Uguaglianza imposta o libertà di scelta: l'alternativa
+
+Il sistema attuale è sbagliato perché mette davanti l'uguaglianza economica imposta dallo Stato i diritti individuali e la libertà di scelta. È un rovesciamento di priorità: la libertà di produrre, scambiare, guadagnare e rischiare viene sacrificata sull'altare di un'uguaglianza di esiti che lo Stato pretende di garantire a tutti, uniformemente, come se ogni persona avesse diritto a un risultato economico piuttosto che a un'opportunità economica.
+
+Il lavoratore che protesta in Calabria chiede tutele, salari, servizi. Ma nel farlo accetta — o subisce — una logica per cui l'uguaglianza di esiti imposta dallo Stato vale più della libertà di scelta. E così la libertà economica, che dovrebbe essere il motore della prosperità, viene sacrificata sull'altare di una redistribuzione che finisce per essere una prigione dorata: ti do il risultato che lo Stato ha deciso per te, ma non la libertà di costruirtelo da solo; ti do le tutele che lo Stato ha imposto, ma non la libertà di negoziare; ti do il posto che lo Stato ha garantito, ma non la libertà di cambiarlo.
+
+### Il muro dell'antimeridionalismo
+
+E c'è un ultimo inganno che impedisce a questa protesta di trasformarsi in vera liberazione: la sospetta che chi critica il sistema di potere marcio del Sud venga subito accusato di antimeridionalismo. È una difesa che funziona benissimo perché protegge il meccanismo: se dire che il potere locale è marcio significa essere contro il Sud, allora il potere marcio può continuare a marcire in pace, sotto lo scudo dell'appartenenza.
+
+Così il calabrese che protesta viene trattato come un traditore quando la sua critica esce dal perimetro della regione. Non è il Sud il problema, dice l'antimeridionalista, è la politica, è il Nord, è il destino. Ma la verità è più scomoda: il sistema di potere marcio che strangola la Calabria è la stessa logica statalista che strangola il resto d'Italia, solo che qui, per densità di relazioni, per clientelismo, per storia, si è cristallizzata in una forma più visibile e più dolorosa.
+
+Chi critica questo sistema non è contro il Sud. È per il Sud. È per quei lavoratori che hanno il diritto — non il privilegio — di vivere in una terra dove la libertà di scelta vale più dell'uguaglianza imposta dallo Stato. L'antimeridionalismo, così come è stato usato, è diventato l'arma di chi non vuole che il potere locale venga smascherato. E finché questa difesa funziona, il lavoratore calabrese continuerà a protestare contro i sintomi senza poter attaccare la malattia.
+
+### Il colpevole comodo: le discriminazioni economiche
+
+E proprio qui si inserisce un altro meccanismo che aggrava il problema: alcuni partiti e movimenti fanno delle vere e proprie discriminazioni economiche, puntando il dito contro alcuni settori economici e scaricando su di loro la responsabilità di un'intera economia malata.
+
+È una tattica antica e sempre attuale: se l'economia non va, non è colpa del sistema, delle tasse, della burocrazia, della redistribuzione imposta — è colpa di quei settori. A volte sono i grandi produttori agricoli, a volte sono i commercianti, a volte sono le imprese private che "sfruttano", a volte sono i datori di lavoro che "pagano troppo" o "pagano troppo poco". Il settore designato come colpevole viene messo sotto la lente di ingrandimento, tassato di più, regolato più a stretto, denigrato pubblicamente, fatto pagare per i fallimenti di un sistema che lo Stato stesso ha disegnato.
+
+Questo meccanismo ha due effetti devastanti. Primo: sposta l'attenzione dalla vera causa (lo Stato che ridistribuisce e dirige) a un capro espiatorio comodo, facendo credere ai lavoratori che il loro problema non è il sistema ma quel settore specifico. Secondo: crea un clima di ostilità verso l'iniziativa economica privata, come se produrre, scambiare e guadagnare fosse un atto di aggressione contro la collettività, e non il motore naturale della prosperità.
+
+Il risultato è che il lavoratore in Calabria, invece di chiedersi perché la libertà economica è stata ridotta, si ritrova a puntare il dito contro il padrone, il commerciante, l'imprenditore locale — tutti "colpevoli" di un sistema che è colpa dello Stato. E così la protesta resta nella superficie, senza mai raggiungere la radice.
+
+### Perché la Calabria ne paga il prezzo più alto
+
+La Calabria — e il Mezzogiorno in generale — è il luogo dove questa logica si manifesta con maggiore crudezza. In una regione con alta densità di rapporti familiari, clientelari e di prossimità, l'intervento statalista tende a cristallizzarsi in reti di protezione e di rendita che premiano l'appartenenza e la posizione più che la produttività e l'iniziativa. Il lavoratore che protesta chiede spesso, senza saperlo, di essere liberato da una struttura che lo protegge dal mercato e insieme lo impedisce di esserne soggetto attivo: lo tutela dall'arbitrarietà del padrone ma lo rende dipendente dal padrone-padrone-Stato, che decide stipendi, turni, carriere, uscite.
+
+Il risultato è un paradosso: il lavoratore calabrese, come quello del resto d'Italia, protesta contro le condizioni economiche, ma le condizioni economiche sono il prodotto proprio della politica che prometteva di proteggerlo.
+
+### Verso un'alternativa: lo Stato che si ritira
+
+La via d'uscita non è più Stato, né meno Stato in senso astratto. È Stato con il ruolo giusto: combattere il furto e la frode, proteggere dalla violenza, far rispettare i contratti liberi, e poi ritirarsi dal ruolo di regista della vita economica dei cittadini. Non imporre un modello di vita. Non decidere chi deve essere ricco e chi povero. Non dirigere l'economia con incentivi e tasse mirate a premiare gli uni e penalizzare gli altri. Non puntare il dito contro i settori che producono come se fossero i responsabili di una malattia che è loro.
+
+Solo così il lavoratore in Calabria — e in ogni altra parte — potrà smettere di essere oggetto di una redistribuzione per tornare a essere soggetto della propria vita economica: libero di rischiare, di scambiare, di produrre, di fallire, di ricominciare, di guadagnare di più o di meno in base alle sue scelte e a quelle degli altri con cui sceglie liberamente di cooperare.
+
+Le strade di Calabria, piene di lavoratori in corteo, sono l'immagine di un popolo che chiede — con le parole della protesta — più libertà economica. È una richiesta che, per essere ascoltata, ha bisogno di attraversare i confini della geografia e delle parti: la Calabria non è un problema del Sud. È il primo, perché il più visibile, degli effetti di una politica che ha dimenticato da dove viene la sua legittimità: dal consenso di chi lavora, produce e sceglie.
+
+Le proteste dei lavoratori in Calabria non sono l'epilogo di una storia di ritardi e periferie. Sono l'inizio di una domanda che tocca l'intero paese: fino a quando la politica pretenderà di governare l'economia come si governa una caserma, e i lavoratori dovranno accontentarsi di una libertà che lo Stato concede e lo Stato revoca? E fino a quando chi oserà criticare il potere locale verrà accusato di antimeridionalismo, come se l'amore per il proprio territorio fosse incompatibile con il coraggio di dire la verità?`,
+  },
+  {
     id: 8,
     title: "Il Panopticon Digitale: Foucault e l'Invisibile Prigione della Modernit\u00e0",
     excerpt: "La societ\u00e0 moderna come un Panopticon digitale: il potere si esercita nel sapere e nel corpo, e noi siamo i nostri propri carcerieri.",
